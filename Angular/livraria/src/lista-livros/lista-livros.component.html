@@ -1,10 +1,12 @@
 <section >
   <div>
-    <ul *ngFor="let livro of livros">
-      <li>{{livro.id}}</li>
-      <li>{{livro.isbn}}</li>
-      <li>{{livro.titulo}}</li>
-      <li>{{livro.autor}}</li>
+    <ul>
+      <li *ngFor="let livro of livros">
+        {{livro.id}}
+        {{livro.isbn}}
+        {{livro.titulo}}
+        {{livro.autor}}
+      </li>
     </ul>
   </div>
 </section>

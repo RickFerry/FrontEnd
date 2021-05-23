@@ -8,12 +8,13 @@ import { Observable } from 'rxjs';
 })
 export class ListaLivrosService {
 
-  private url = 'https://ts-scel.herokuapp.com/api/v1/livros';
+  private url: string;
 
-constructor(private httpClient: HttpClient) {}
+constructor(private httpClient: HttpClient) {
+  this.url = "https://ts-scel.herokuapp.com/api/v1/livros";
+}
 
   buscaLivros(): Observable<Livro[]>{
     return this.httpClient.get<Livro[]>(this.url);
   }
-
 }

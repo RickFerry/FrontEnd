@@ -22,5 +22,4 @@ export class ListaLivrosComponent implements OnInit {
       this.livros = livros;
     })
   }
-
 }
