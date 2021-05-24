@@ -1,7 +1,7 @@
 <section >
   <div>
     <ul>
-      <li *ngFor="let livro of livros">
+      <li *ngFor="let livro of livros$ | async">
         Id: {{livro.id}} <br>
         ISBN: {{livro.isbn}} <br>
         Titulo: {{livro.titulo}} <br>

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ListaLivrosService {
 
-  private url: string;
+  private readonly url: string;
 
 constructor(private httpClient: HttpClient) {
   //this.url = "https://ts-scel.herokuapp.com/api/v1/livros";
